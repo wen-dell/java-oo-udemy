@@ -1,4 +1,4 @@
-package introducao;
+package com.udemy.introducao;
 
 public class Main {
 
