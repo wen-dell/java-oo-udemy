@@ -10,6 +10,7 @@ public class OperadoresBitwise {
         System.out.println(n1 | n2); // OPERAÇÃO OU BIT A BIT
         System.out.println(n1 ^ n2); // OPERAÇÃO OU EXCLUSIVO BIT A BIT
 
+        
     }
 
 }
