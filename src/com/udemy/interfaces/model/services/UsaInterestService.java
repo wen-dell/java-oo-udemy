@@ -1,6 +1,6 @@
 package com.udemy.interfaces.model.services;
 
-public class UsaInterestService {
+public class UsaInterestService implements InterestService {
 
     private double interestRate;
 
@@ -8,15 +8,9 @@ public class UsaInterestService {
         this.interestRate = interestRate;
     }
 
+    @Override
     public double getInterestRate() {
         return interestRate;
-    }
-
-    public double payment(double amount, int months) {
-        if (months < 1) {
-            throw new IllegalArgumentException("Months must be greater than zero");
-        }
-        return amount * Math.pow(1.0 + interestRate / 100.0, months);
     }
 
 }

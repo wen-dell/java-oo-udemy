@@ -1,6 +1,7 @@
 package com.udemy.interfaces.application;
 
 import com.udemy.interfaces.model.services.BrazilInterestService;
+import com.udemy.interfaces.model.services.InterestService;
 import com.udemy.interfaces.model.services.UsaInterestService;
 
 import java.util.Locale;
@@ -19,7 +20,7 @@ public class ProgramInterest {
         System.out.print("Months: ");
         int months = sc.nextInt();
 
-        UsaInterestService is = new UsaInterestService(1.0);
+        InterestService is = new UsaInterestService(1.0);
         double payment = is.payment(amount, months);
 
         System.out.println("Payment after " + months + " months:");
