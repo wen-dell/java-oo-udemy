@@ -20,6 +20,9 @@ public class Program {
             ps.addValue(value);
         }
 
+        // Não pode, type safety ativado
+        // ps.addValue("AAA");
+
         ps.print();
         System.out.println("First: " + ps.first());
 
