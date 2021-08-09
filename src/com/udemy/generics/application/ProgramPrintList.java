@@ -7,6 +7,10 @@ public class ProgramPrintList {
 
     public static void main(String[] args) {
 
+        // Não é possível adicionar dados a uma lista de tipo curinga
+        // List<?> list = new ArrayList<>();
+        // list.add(2);
+
         List<Integer> myList = Arrays.asList(5, 2, 10);
         printList(myList);
 
