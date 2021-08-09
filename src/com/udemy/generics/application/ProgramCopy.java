@@ -33,7 +33,9 @@ public class ProgramCopy {
         List<Object> myObjs = new ArrayList<>();
 
         copy(myInts, myObjs);
+        printList(myObjs);
         copy(myDoubles, myObjs);
+        printList(myObjs);
 
     }
 
@@ -43,6 +45,13 @@ public class ProgramCopy {
         for (Number number: source) {
             destiny.add(number);
         }
+    }
+
+    public static void printList(List<?> list) {
+        for (Object obj : list) {
+            System.out.print(obj + " ");
+        }
+        System.out.println();
     }
 
 }
