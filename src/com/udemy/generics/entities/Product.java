@@ -33,7 +33,7 @@ public class Product implements Comparable<Product> {
 
     @Override
     public int compareTo(Product other) {
-        return this.getPrice().compareTo(other.getPrice());
+        return -this.getPrice().compareTo(other.getPrice());
     }
 
     @Override
