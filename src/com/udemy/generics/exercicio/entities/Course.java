@@ -1,4 +1,4 @@
-package com.udemy.generics.entities;
+package com.udemy.generics.exercicio.entities;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,4 +1,6 @@
-package com.udemy.generics.entities;
+package com.udemy.generics.exercicio.entities;
+
+import com.udemy.generics.exercicio.entities.Course;
 
 import java.util.List;
 import java.util.ArrayList;

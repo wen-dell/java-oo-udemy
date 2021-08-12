@@ -1,8 +1,8 @@
-package com.udemy.generics.application;
+package com.udemy.generics.exercicio.application;
 
-import com.udemy.generics.entities.Course;
-import com.udemy.generics.entities.Instructor;
-import com.udemy.generics.entities.Student;
+import com.udemy.generics.exercicio.entities.Course;
+import com.udemy.generics.exercicio.entities.Instructor;
+import com.udemy.generics.exercicio.entities.Student;
 
 import java.util.Arrays;
 import java.util.HashSet;

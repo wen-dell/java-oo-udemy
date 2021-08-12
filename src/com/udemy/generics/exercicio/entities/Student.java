@@ -1,4 +1,4 @@
-package com.udemy.generics.entities;
+package com.udemy.generics.exercicio.entities;
 
 public class Student {
 
