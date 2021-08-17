@@ -1,4 +1,4 @@
-package com.udemy.lambda.application;
+package com.udemy.lambda.entities;
 
 import com.udemy.lambda.entities.Product;
 
