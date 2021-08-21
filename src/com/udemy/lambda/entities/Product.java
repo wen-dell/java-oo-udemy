@@ -34,12 +34,13 @@ public class Product {
         return price >= 100.00;
     }
 
+    public static void staticPriceUpdate(Product product) {
+        product.setPrice(product.getPrice() * 1.1);
+    }
+
     @Override
     public String toString() {
-        return "Product{" +
-                "name='" + name + '\'' +
-                ", price=" + price +
-                '}';
+        return name + ", " + String.format("%.2f", price);
     }
 
 }
