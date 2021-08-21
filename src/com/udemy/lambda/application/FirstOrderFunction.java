@@ -2,12 +2,14 @@ package com.udemy.lambda.application;
 
 import com.udemy.lambda.entities.Product;
 
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 import java.util.ArrayList;
 
-public class Program {
+public class FirstOrderFunction {
+
+    public static int compareProducts(Product p1, Product p2) {
+        return p1.getPrice().compareTo(p2.getPrice());
+    }
 
     public static void main(String[] args) {
 
@@ -17,12 +19,9 @@ public class Program {
         list.add(new Product("Notebook", 1200.00));
         list.add(new Product("Tablet", 450.00));
 
-        // Expressão lambda é uma função anônima de primeira classe
-        list.sort((p1, p2) -> p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase()));
+        list.sort(FirstOrderFunction::compareProducts);
 
-        for (Product p : list) {
-            System.out.println(p);
-        }
+        list.forEach(System.out::println);
 
     }
 
