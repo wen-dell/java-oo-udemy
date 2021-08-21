@@ -1,6 +1,7 @@
 package com.udemy.lambda.application;
 
 import com.udemy.lambda.entities.Product;
+import com.udemy.lambda.util.ProductPredicate;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -16,7 +17,7 @@ public class ProgramPredicate {
         list.add(new Product("Tablet", 350.50));
         list.add(new Product("HD Case", 80.90));
 
-        list.removeIf(p -> p.getPrice() >= 100.00);
+        list.removeIf(new ProductPredicate());
 
         for (Product p : list) {
             System.out.println(p);
